@@ -1,5 +1,6 @@
 <?php
-$zipUrl = 'https://join.gov.tw/idea/files/zip/842b1b2a-464b-4f1d-9d61-d5a0ab1b946b/export.zip';
+$timestamp = date('YmdHis');
+$zipUrl = "https://join.gov.tw/idea/files/zip/842b1b2a-464b-4f1d-9d61-d5a0ab1b946b/export_{$timestamp}.zip";
 $zipFile = __DIR__ . '/temp.zip';
 $extractDir = __DIR__ . '/temp_extract';
 $outputJson = __DIR__ . '/../docs/842b1b2a-464b-4f1d-9d61-d5a0ab1b946b.json';
